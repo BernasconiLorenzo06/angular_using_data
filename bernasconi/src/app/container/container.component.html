@@ -1,1 +1,14 @@
-<p>container works!</p>
+<div class="row">
+    <div class="col-sm-6" *ngFor = "let car of macchine">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            <app-macchina [car]="car">
+            </app-macchina>
+          </h5>
+          <p class="card-text">RIPARAZIONE</p>
+          
+        </div>
+      </div>
+    </div>
+</div>
